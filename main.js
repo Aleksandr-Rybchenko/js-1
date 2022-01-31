@@ -13,22 +13,24 @@
 // Если возраст меньше 18 лет - показать на экране сообщение: You are not allowed to visit this website.
 // Если возраст от 18 до 22 лет (включительно) - показать окно со следующим сообщением: Are you sure you want to continue? и кнопками Ok, Cancel. Если пользователь нажал Ok, показать на экране сообщение: Welcome, + имя пользователя. Если пользователь нажал Cancel, показать на экране сообщение: You are not allowed to visit this website.
 // Если возраст больше 22 лет - показать на экране сообщение: Welcome, + имя пользователя. 
-
+"use strict"
 alert("введите имя и возраст");
 let userName = prompt('Имя?')
-let age = prompt('Возраст?')
+let age = parseInt(prompt('Возраст?'))
+
 if(age < 18) {
     alert('You are not allowed to visit this website')
 }
-if(age >= 22){
-        
+else if(age > 22){
+        alert('Welcome' + " " + userName.charAt(0).toLocaleUpperCase() + userName.slice(1))
 }
-if(age >= 18 && age <= 22)
-    if (confirm("Are you sure you want to continue?")) {
-        alert("Welcome " + userName)
-    } else {
-        alert("You are not allowed to visit this website")
- } else  {alert("Welcome " + userName)};
+else if(age = 19, age = 20, age = 21, age = 22 , age = 18){
+      if(confirm("Are you sure you want to continue?")){
+        alert('Welcome' + " " + userName.charAt(0).toLocaleUpperCase() + userName.slice(1)) 
+      }else{
+        alert('You are not allowed to visit this website')
+      }
+} else(alert("You are not allowed to visit this website."))
     
 
     
