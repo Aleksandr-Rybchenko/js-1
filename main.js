@@ -23,10 +23,12 @@ if(age < 18) {
 if(age >= 22){
         alert('Welcome' + " " + userName)
 }
-else if(age = 18, age = 19, age = 20, age = 21, age < 22){
-    confirm('Are you sure you want to continue?')
-}
-// было сложно но разобрался, вроде все условия выполнил
+if(age >= 18 && age <= 22)
+    if (confirm("Are you sure you want to continue?")) {
+        alert("Welcome " + userName)
+    } else {
+        alert("You are not allowed to visit this website")
+ } else  {alert("Welcome " + userName)};
     
 
     
