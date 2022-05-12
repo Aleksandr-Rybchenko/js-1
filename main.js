@@ -14,6 +14,7 @@
 // Если возраст от 18 до 22 лет (включительно) - показать окно со следующим сообщением: Are you sure you want to continue? и кнопками Ok, Cancel. Если пользователь нажал Ok, показать на экране сообщение: Welcome, + имя пользователя. Если пользователь нажал Cancel, показать на экране сообщение: You are not allowed to visit this website.
 // Если возраст больше 22 лет - показать на экране сообщение: Welcome, + имя пользователя. 
 "use strict"
+function operete(){
 let userName = prompt('введите свое имя')
 while (!isNaN(userName) || userName === null || userName === 0){
   userName = prompt('ввведите коректное имя')
@@ -32,7 +33,9 @@ while (isNaN(userAge) || userAge === null || userAge === 0){
   alert(`Welcome, ${userName}`)
 }else {
    alert(`${userName}, You are not allowed to visit this website. `)
- }
+   operete()
+ }}
+operete()
     
 
     
