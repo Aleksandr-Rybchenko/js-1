@@ -22,14 +22,7 @@ let userAge = +prompt('введите возраст')
 while (isNaN(userAge) || userAge === null || userAge === 0){
   userAge = +prompt('введите коректный возраст')
 }
-if(userAge < 18) {
-  if(userAge < 18){
-    alert(`${userName}, You are not allowed to visit this website. `)
-  }
-  else {
-  alert(`${userName}, You are not allowed to visit this website. `)
-   }
-}else if (userAge === 18 || userAge === 19 || userAge === 20 || userAge === 21 || userAge === 22){
+ if (userAge === 18 || userAge === 19 || userAge === 20 || userAge === 21 || userAge === 22){
   if (confirm('Are you sure you want to continue?')){
   alert(`Welcome, ${userName}`)
 }else {
@@ -37,7 +30,9 @@ if(userAge < 18) {
   }
 }else if (userAge > 22){
   alert(`Welcome, ${userName}`)
-}
+}else { (userAge < 18)
+   alert(`${userName}, You are not allowed to visit this website. `)
+ }
     
 
     
