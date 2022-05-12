@@ -30,7 +30,7 @@ while (isNaN(userAge) || userAge === null || userAge === 0){
   }
 }else if (userAge > 22){
   alert(`Welcome, ${userName}`)
-}else { (userAge < 18)
+}else {
    alert(`${userName}, You are not allowed to visit this website. `)
  }
     
